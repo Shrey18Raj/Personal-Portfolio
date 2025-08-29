@@ -1,0 +1,25 @@
+:root {
+    --primary-color: #66fcf1;
+    --secondary-color: #45a29e;
+    --text-color: #c5c6c7;
+    --card-bg: #1f2833;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(ellipse at top, #000729 0%, #05080f 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text
+}

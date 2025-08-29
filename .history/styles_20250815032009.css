@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #66fcf1;
+    --secondary-color: #45a29e;
+    --text-color: #c5c6c7;
+    --card-bg: #1f2833;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(ellipse at top, #000729 0%, #05080f 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar {
+    margin: 1.5rem auto 3rem auto;
+    width: fit-content;
+    background: rgba(49, 49, 69, 0.4);
+    padding: 0.35rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #474766;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    box-shadow: 0 0 8px 1px #23234c, inset 0 0 8px 1px #3a3a60;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    letter-spacing: ;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyansh Raj - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="glass-card m-4 mx-auto max-w-4xl">
+  <div class="px-6 py-4">
+    <div class="flex items-center justify-between">
+      <div class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        &lt;DevPortfolio/&gt;
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <button
+          onclick="scrollToSection('about')"
+          class="text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+        >
+          About
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </button>
+        <button
+          onclick="scrollToSection('projects')"
+          class="text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+        >
+          Projects
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </button>
+        <button
+          onclick="scrollToSection('skills')"
+          class="text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+        >
+          Skills
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </button>
+        <button
+          onclick="scrollToSection('contact')"
+          class="text-muted-foreground hover:text-primary transition-colors duration-300 relative group"
+        >
+          Contact
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+        </button>
+      </div>
+
+      <button
+        onclick="toggleMobileMenu()"
+        class="md:hidden text-foreground hover:text-primary transition-colors"
+      >
+        <svg
+          class="menu-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-border">
+      <div class="flex flex-col space-y-3">
+        <button
+          onclick="scrollToSection('about')"
+          class="text-left text-muted-foreground hover:text-primary transition-colors duration-300"
+        >
+          About
+        </button>
+        <button
+          onclick="scrollToSection('projects')"
+          class="text-left text-muted-foreground hover:text-primary transition-colors duration-300"
+        >
+          Projects
+        </button>
+        <button
+          onclick="scrollToSection('skills')"
+          class="text-left text-muted-foreground hover:text-primary transition-colors duration-300"
+        >
+          Skills
+        </button>
+        <button
+          onclick="scrollToSection('contact')"
+          class="text-left text-muted-foreground hover:text-primary transition-colors duration-300"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+</body>
+<script>
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+    // You'd also swap the menu icon here
+    // For example:
+    // const menuIcon = document.querySelector('.menu-icon');
+    // menuIcon.innerHTML = mobileMenu.classList.contains('hidden') ? '<svg for menu>' : '<svg for close>';
+  }
+
+  function scrollToSection(href) {
+    // Add your scrolling logic here
+    console.log('Scrolling to section:', href);
+  }
+</script>
+</html>
